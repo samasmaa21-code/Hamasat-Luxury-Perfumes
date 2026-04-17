@@ -1,0 +1,228 @@
+/* Color Palette: Burgundy #913131 | Cream #f4ecee | Pure White #ffffff */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4ecee; /* Your logo cream background */
+    color: #333;
+}
+
+/* 1. The Sticky Header */
+.main-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff; /* Pure white top bar */
+    border-bottom: 1px solid #eaeaea;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+/* Header Sections */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.brand-name-arabic {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 40px;
+    color: #913131; /* Hamasat Burgundy */
+    margin: 0;
+    line-height: 1;
+}
+
+/* Search Bar (Justyol Pill Style) */
+.header-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 50px;
+    padding: 12px 25px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Right Icons */
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    flex: 1;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.2s;
+}
+
+.icon-link:hover {
+    color: #913131;
+}
+
+.fav-count {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cart-icon {
+    background-color: #f3f3f3;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2. Main Content & Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.brand-tagline {
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+/* 3. Product Display */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product {
+    background: #ffffff;
+    width: 280px;
+    padding: 40px 20px;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.product h2 {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 500;
+    color: #913131; /* Brand Burgundy */
+    margin-bottom: 25px;
+}
+
+.product button {
+    background-color: #000; /* Minimalist Black */
+    color: #fff;
+    border: none;
+    padding: 12px 35px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product button:hover {
+    background-color: #913131; /* Changes to brand color */
+}
+
+/* 4. WhatsApp Branding */
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #000;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.whatsapp-button:hover {
+    background: #25d366; /* WhatsApp Green on hover */
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .header-container {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+    .header-center {
+        order: 3;
+        min-width: 100%;
+        margin-top: 10px;
+    }
+}
